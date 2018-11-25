@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="views.FXMLController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tbSubject" layoutX="40.0" layoutY="78.0" prefHeight="200.0" prefWidth="790">
+                    <columns>
+                      <TableColumn fx:id="tcId" prefWidth="100" text="Mã môn học" />
+                      <TableColumn fx:id="tcNam" prefWidth="150" text="Học phân" />
+                      <TableColumn fx:id="tcNocredit" prefWidth="50" text="Số tc" />
+                      <TableColumn fx:id="tcIdClass" prefWidth="70" text="Mã LHP" />
+                      <TableColumn fx:id="tcNoStudent" prefWidth="50.0" text="Số SV" />
+                      <TableColumn fx:id="tcTeacher" prefWidth="80" text="Giảng Viên" />
+                      <TableColumn fx:id="tcSession" minWidth="50" prefWidth="0.0" text="Buổi" />
+                      <TableColumn fx:id="tcDayOfWeek" minWidth="50" prefWidth="0.0" text="Thứ" />
+                      <TableColumn fx:id="tcLesson" prefWidth="50" text="Tiết" />
+                      <TableColumn fx:id="tcLocation" prefWidth="80" text="Giảng đường" />
+                      <TableColumn fx:id="tcNote" prefWidth="50" text="Ghi chú" />
+                    </columns>
+                  </TableView>
+   </children>
+</AnchorPane>
